@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <audio id="audio" src="Essence of Thandel.mp3" preload="auto"></audio>
+        <div class="controls">
+            <button id="playPauseBtn">Play</button>
+            <input type="range" id="progress" value="0" step="1" min="0" />
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            <input type="range" id="volume" value="100" step="1" min="0" max="100" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
